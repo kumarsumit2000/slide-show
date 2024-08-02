@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        left: -100%;
+        width: 100%;
+    }
+
+    .mySlides img {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        border: 2px black solid;
+    }
+</style>
+
+<body>
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <img src="./1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="./6.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="prevSlide()"><<a class="next" onclick="nextSlide()">></a>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
